@@ -27,12 +27,15 @@
         "RAM_reserve_all": true,
         "firmware": "bios",
   
-        "storage": [
-          {
-            "disk_size": "{{user `os-disk-size`}}",
-            "disk_thin_provisioned": "{{user `disk-thin-provision`}}"
-          }
-        ],
+        "storage": [{
+                "disk_size": "61440",
+                "disk_thin_provisioned":true},
+                        {
+                "disk_size": 40960,
+                "disk_thin_provisioned":true}, 
+                        {
+                 "disk_size": 20480,
+                 "disk_thin_provisioned":true}],
         "disk_controller_type": "lsilogic-sas",
           
         "network_adapters": [
