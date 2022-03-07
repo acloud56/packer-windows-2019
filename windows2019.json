@@ -33,7 +33,7 @@
             "disk_thin_provisioned": "{{user `disk-thin-provision`}}"
           }
         ],
-        "disk_controller_type": "pvscsi",
+        "disk_controller_type": "lsilogic-sas",
           
         "network_adapters": [
           {
