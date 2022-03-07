@@ -65,7 +65,7 @@
   "provisioners": [
     {
         "type": "powershell",
-        "scripts": ["scripts/win-update.ps1"]
+        "scripts": ["scripts/win-updates.ps1"]
       },
       {
         "type": "windows-restart",
