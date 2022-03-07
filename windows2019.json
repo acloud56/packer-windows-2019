@@ -57,8 +57,8 @@
             "scripts/disable-network-discovery.cmd",
             "scripts/enable-rdp.cmd",
             "scripts/enable-winrm.ps1",
-            "scripts/install-vm-tools.cmd"
-            "scripts/diskmount.ps1
+            "scripts/install-vm-tools.cmd",
+            "scripts/diskmount.ps1"
         ]
     }
   ],
