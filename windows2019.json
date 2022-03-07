@@ -64,14 +64,6 @@
   ],
   
   "provisioners": [
-    {
-        "type": "powershell",
-        "scripts": ["scripts/win-updates.ps1"]
-      },
-      {
-        "type": "windows-restart",
-        "restart_timeout": "30m"
-      },
       {
         "type": "powershell",
         "scripts": ["scripts/diskmount.ps1"]
