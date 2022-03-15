@@ -11,6 +11,7 @@
         "cluster": "{{user `vsphere-cluster`}}",
         "datastore": "{{user `vsphere-datastore`}}",
         "folder": "{{user `vsphere-folder`}}",
+        "datacenter": "{{user `datacenter`}}",
   
         "communicator": "winrm",
         "winrm_username": "Administrator",
