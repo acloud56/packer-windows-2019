@@ -16,8 +16,8 @@ if ($initial_e_drive.DriveType -eq 5)
     $drv.Put()
 }
 
-$mounts = "D,P,L,X,R"
-$label = "Data,PageFile,SQLLogs_Root,TempDB_Root,SQLdata_Root"
+$mounts = "D,P,L,X,R,SQLdata_Root,SQLLogs_Vol1,TempDB_Vol1,SQLData_Vol0,SQLData_Vol1"
+$label = "Data,PageFile,SQLLogs_Root,TempDB_Root,SQLdata_Root,SQLLogs_Vol1,TempDB_Vol1,SQLData_Vol0,SQLData_Vol1"
 ### Stops the Hardware Detection Service ###
 
 
