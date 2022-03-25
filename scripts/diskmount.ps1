@@ -70,3 +70,6 @@ Start-Service -Name ShellHWDetection
 ### end of script ###
 $disks=get-wmiobject -class win32_logicaldisk | Format-Table DeviceID,@{Label="Size";Expression={"{0:N2}" -f ($_.Size / 1GB)}} -AutoSize
 Write-Output $disks
+
+### set up paging file on P
+Set-WmiInstance Win32_PageFileSetting -Arguments @{Name='P:\pagefile.sys'; InitialSize = 0; MaximumSize = 0} -EnableAllPrivileges | Out-Null
