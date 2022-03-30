@@ -88,7 +88,15 @@
   "provisioners": [
       {
         "type": "powershell",
-        "scripts": ["scripts/diskmount.ps1"]
+        "scripts": ["scripts/diskmountsql.ps1"]
+      },
+    {
+        "type": "powershell",
+        "scripts": ["scripts/win-updates.ps1"]
+      },
+     {
+        "type": "windows-restart",
+        "restart_timeout": "30m"
       },
     {
       "type": "windows-shell",
